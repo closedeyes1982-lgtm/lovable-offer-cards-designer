@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovable Beauty Product Offer Card Designer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .card {
+            width: 60mm;
+            height: 130mm;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #fff;
+            position: relative;
+        }
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        .qr-code {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .print-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="discount-badge">خصم 20%</div>
+        <h2>بطاقة عرض منتج جمال محبوب</h2>
+        <p>هذا هو وصف للمنتج الرائع الذي يتميز بجودة عالية.</p>
+        <img class="qr-code" src="https://api.qrserver.com/v1/create-qr-code/?data=your_product_link" alt="QR Code">
+    </div>
+    <button class="print-button" onclick="window.print()">طباعة</button>
+    <script>
+        // QR code generation and other JavaScript functionality can be added here
+    </script>
+</body>
+</html>
